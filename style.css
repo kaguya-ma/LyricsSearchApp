@@ -1,0 +1,39 @@
+@font-face {
+    font-family: Roboto;
+    src: url("Roboto-Black.ttf");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+input:focus, button:focus {
+    outline: none;
+}
+
+header {
+    background-image: url("music.jpg");
+    color: darkgray;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+    position: relative;
+    font-family: Roboto, serif;
+}

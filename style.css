@@ -37,3 +37,57 @@ header {
     position: relative;
     font-family: Roboto, serif;
 }
+
+header h1 {
+    margin: 0 0 30px;
+}
+
+header * {
+    z-index: 1;
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+form input {
+    border-radius: 50px;
+    border: 0;
+    font-size: 16px;
+    padding: 15px 30px;
+    width: 100%;
+}
+
+form {
+    position: relative;
+    width: 500px;
+    max-width: 100%;
+}
+
+form button {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    background-color: orange;
+    border: 0;
+    border-radius: 50px;
+    color: white;
+    font-size: 16px;
+    padding: 13px 30px;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+}
+
+.result p {
+    text-align: center;
+
+}

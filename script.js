@@ -1,7 +1,8 @@
 const url = "https://api.lyrics.ovh";
 
 
-async function searchLyrics(searchTerm) {
+async function fetchLyrics() {
+    const searchTerm = document.querySelector("#search").value.trim();
     fetch(`${url}/suggest/${searchTerm}`)
         .then(res => res.json())
         .then(data =>  showData(data))
@@ -16,7 +17,7 @@ document.querySelector("#form").addEventListener("submit", (e) => {
         alert("Please enter song or artist name")
 
     } else {
-        searchLyrics(searchTerm)
+        fetchLyrics(searchTerm)
     }
 })
 
